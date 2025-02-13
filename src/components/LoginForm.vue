@@ -48,9 +48,9 @@
 <template>
     <div>
     <div class="flex flex-col items-center">
-      <div class="w-96">
+      <div class="md:w-96">
         <!-- main -->
-      <div class="mt-15 w-110 leading-6">
+      <div class="mt-15 w-110 leading-6 p-5">
         <h1 class="font-display text-2xl font-bold">Welcome back,</h1>
         <p class="mt-5 mb-5 font-display text-md">
           Hi, my name is Eventful Moments, I am a bucket… no, not the bucket of
@@ -61,8 +61,8 @@
       <div>
         <!-- form -->
         <form @submit="handleSubmit" class="mt-5">
-          <div>
-            <div>
+          <div class="p-5">
+            <div class="p-2">
               <label for="Email" class="font-display">Email</label>
               <input
                 type="email"
@@ -70,11 +70,11 @@
                 id="Email"
                 v-model="email"
                 
-                class="block min-w-110 grow py-1.5 pr-3 pl-1 mt-3 mb-3 border border-gray-600 rounded-sm focus:outline-none"
+                class="block w-100 md:min-w-110 grow py-1.5 pr-3 pl-1 mt-3 mb-3 border border-gray-600 rounded-sm focus:outline-none"
               />
               <p v-if="emailerror" class="text-red-500 text-xs">{{ emailerror }}</p>
             </div>
-            <div>
+            <div class="p-2">
               <label for="Password">Password</label>
               <input
                 type="Password"
@@ -82,7 +82,7 @@
                 id="Password"
                 v-model="password"
                 
-                class="block min-w-110 grow py-1.5 pr-3 pl-1 mt-3 mb-3 border border-gray-600 rounded-sm focus:outline-none"
+                class="block w-100 md:min-w-110 grow py-1.5 pr-3 pl-1 mt-3 mb-3 border border-gray-600 rounded-sm focus:outline-none"
               />
               <p v-if="passworderror" class="text-red-500 text-xs">{{ passworderror }}</p>
             </div>

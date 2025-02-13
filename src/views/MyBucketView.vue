@@ -4,7 +4,7 @@ import { RouterLink } from "vue-router";
 <template>
   <div>
     <!-- Event Buckets -->
-    <div class="flex items-center justify-between mx-20 my-9">
+    <div class="flex flex-col md:items-center md:justify-between mx-5 md:mx-20 my-9">
       <div>
         <h1 class="font-display text-xl font-bold text-black">
           Welcome John Doe,
@@ -25,8 +25,8 @@ import { RouterLink } from "vue-router";
 
     <!-- Event Buckets -->
     <div>
-      <div class="grid grid-cols-2 gap-5 mx-20 my-9">
-        <div class="bg-white shadow-lg hover:bg-[#FFF5A7] p-5">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-5 mx-5 md:mx-20 my-9">
+        <div class="bg-white shadow-lg hover:bg-[#FFF5A7] p-6 md:p-5">
           <div>
             <h2 class="font-display font-bold text-sm text-black mb-5">
               Lorem ipsum began as scrambled, nonsensical Latin derived from

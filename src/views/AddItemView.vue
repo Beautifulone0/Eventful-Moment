@@ -3,7 +3,7 @@
   <div>
     <!-- Add Item -->
     <div>
-      <form class="mx-10 my-10 p-5">
+      <form class="mx-5 md:mx-10 my-10 p-5">
         <div>
           <label for="Date" class=" font-display text-black text-md">Date in the future</label>
           <input type="date" name="Date" id="Date" class="border border-gray-500 focus:outline-none w-80 h-8 block rounded-sm text-sm font-display text-black mt-3 mb-3 " />

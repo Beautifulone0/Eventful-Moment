@@ -58,13 +58,13 @@
     <div class="flex flex-col items-center">
       <div class="w-96 my-5">
         <!-- main -->
-        <div class="mt-15 w-110 leading-6">
+        <div class="mx-3 mt-15 w-110 leading-6">
           <h1 class="font-display text-2xl font-bold">Create an account,</h1>
         </div>
         <div>
           <!-- form -->
           <form @submit="handleSubmit" class="mt-5">
-            <div>
+            <div class="mx-3">
               <div>
                 <label for="FullName" class="font-display text-xs">Full Name</label>
                 <input
@@ -72,7 +72,7 @@
                   name="FullName"
                   id="FullName"
                   v-model="fullName"
-                  class="block min-w-110 grow py-1.5 pr-3 pl-1 mt-3 mb-3 border border-gray-600 rounded-sm focus:outline-none font-display text-xs"
+                  class="block w-90 md:min-w-110 grow py-1.5 pr-3 pl-1 mt-3 mb-3 border border-gray-600 rounded-sm focus:outline-none font-display text-xs"
                 />
                 <p v-if="fullNameerror" class="text-red-500 text-xs ml-2">{{ fullNameerror }}</p>
               </div>
@@ -83,7 +83,7 @@
                   name="Email"
                   id="Email"
                   v-model="email"
-                  class="block min-w-110 grow py-1.5 pr-3 pl-1 mt-3 mb-3 border border-gray-600 rounded-sm focus:outline-none font-display text-xs"
+                  class="block w-90 md:min-w-110 grow py-1.5 pr-3 pl-1 mt-3 mb-3 border border-gray-600 rounded-sm focus:outline-none font-display text-xs"
                 />
                 <p v-if="emailerror" class="text-red-500 text-xs ml-2">{{ emailerror }}</p>
               </div>
@@ -94,7 +94,7 @@
                   name="Password"
                   id="Password"
                   v-model="password"
-                  class="block min-w-110 grow py-1.5 pr-3 pl-1 mt-3 mb-3 border border-gray-600 rounded-sm focus:outline-none font-display text-xs"
+                  class="block w-90 md:min-w-110 grow py-1.5 pr-3 pl-1 mt-3 mb-3 border border-gray-600 rounded-sm focus:outline-none font-display text-xs"
                 />
                 <p v-if="passworderror" class="text-red-500 text-xs ml-2">{{ passworderror }}</p>
               </div>
